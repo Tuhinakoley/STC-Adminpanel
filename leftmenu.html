@@ -1,0 +1,185 @@
+<!--<nav class="left-menu" left-menu id="leftmenu">-->
+<div class="logo-container">
+        <a href="dashboard.html" class="logo">
+            <img src="/admin/assets/common/img/logo2.png" alt="STC Wallpaper" />
+            <img class="logo-inverse" src="/admin/assets/common/img/logo2.png" alt="Stc Wallpaper" />
+        </a>
+    </div>
+    <div class="left-menu-inner scroll-pane">
+        <ul class="left-menu-list left-menu-list-root list-unstyled" id="m">
+            
+            
+			
+           
+        </ul>
+    </div>
+	
+	<script>
+	
+	var user_details=JSON.parse(sessionStorage.getItem("user_details"));
+
+	if(user_details==null){
+		window.location="login.html";
+	}else{
+		
+		if(user_details.user_role_name == "Admin"){
+		
+			$("#m").append('<li>'+
+                '<a class="left-menu-link" href="dashboard.html">'+
+                    '<i class="left-menu-link-icon icmn-home2"></i>'+
+                   ' Dashboard'+
+                '</a>'+
+            '</li>'+
+             '<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="admin_user.html">'+
+                   ' <i class="left-menu-link-icon icmn-user"></i>'+
+                   ' Admin List'+
+                '</a>'+
+           ' </li>'+
+            '<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="distributor_user.html">'+
+                    '<i class="left-menu-link-icon icmn-user"></i>'+
+                   ' Distributer List'+
+               ' </a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="dealer_user.html">'+
+                    '<i class="left-menu-link-icon icmn-user"></i>'+
+                    'Dealer List'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="job_list.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'All Job List'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="ongoing.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'Ongoing Job List'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="cancelled.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"><!-- --></i>'+
+                    'Cancelled List'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="completed.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                   ' Completed List'+
+               ' </a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="stock_catlog_master.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'Stock Catlog master'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="stock_catlog.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'Stock Catlog'+
+               ' </a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="customise_stock_catlog_master.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'Customise Stock Catlog master'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="customise_stock_catlog.html">'+
+                   ' <i class="left-menu-link-icon icmn-briefcase"></i>'+
+                   ' Customise Stock Catlog'+
+               ' </a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="profile.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'Profile'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" style="cursor:pointer;" onclick="actionLogout();">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'Logout'+
+               ' </a>'+
+            '</li>');
+		
+		}else{
+			
+			$("#m").append('<li>'+
+                '<a class="left-menu-link" href="dashboard.html">'+
+                    '<i class="left-menu-link-icon icmn-home2"></i>'+
+                   ' Dashboard'+
+                '</a>'+
+            '</li>'+
+             
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="dealer_user.html">'+
+                    '<i class="left-menu-link-icon icmn-user"></i>'+
+                    'Dealer List'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="job_list.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'All Job List'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="ongoing.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'Ongoing Job List'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="cancelled.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"><!-- --></i>'+
+                    'Cancelled List'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="completed.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                   ' Completed List'+
+               ' </a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="stock_catlog_master.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'Stock Catlog master'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="stock_catlog.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'Stock Catlog'+
+               ' </a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" href="profile.html">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'Profile'+
+                '</a>'+
+            '</li>'+
+			'<li class="left-menu-list">'+
+                '<a class="left-menu-link" style="cursor:pointer;" onclick="actionLogout();">'+
+                    '<i class="left-menu-link-icon icmn-briefcase"></i>'+
+                    'Logout'+
+               ' </a>'+
+            '</li>');
+			
+		}
+		
+	}
+	
+		function actionLogout(){
+			sessionStorage.clear();
+			localStorage.clear();
+			window.location="login.html";
+		}
+	</script>

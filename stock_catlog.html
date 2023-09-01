@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MANAGE STOCK CATALOG</title>
+
+    <link href="assets/common/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
+    <link href="assets/common/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
+    <link href="assets/common/img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
+    <link href="assets/common/img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
+    <link href="assets/common/img/favicon.png" rel="icon" type="image/png">
+    <link href="favicon.ico" rel="shortcut icon">
+
+    <!-- HTML5 shim and Respond.js for < IE9 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Vendors Styles -->
+    <!-- v1.0.0 -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/jscrollpane/style/jquery.jscrollpane.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/ladda/dist/ladda-themeless.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/cleanhtmlaudioplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/cleanhtmlvideoplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap-sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/summernote/dist/summernote.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/ionrangeslider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/datatables/media/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/c3/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/chartist/dist/chartist.min.css">
+    <!-- v1.4.0 -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/nprogress/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/jquery-steps/demo/css/jquery.steps.css">
+    <!-- v1.4.2 -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <!-- v1.7.0 -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/dropify/dist/css/dropify.min.css">
+
+    <!-- Clean UI Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/common/css/source/main.css">
+	
+   	
+    
+
+    <!-- Vendors Scripts -->
+    <!-- v1.0.0 -->
+	
+	
+   
+	
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    
+    <script src="assets/vendors/tether/dist/js/tether.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
+    <script src="assets/vendors/spin.js/spin.js"></script>
+    <script src="assets/vendors/ladda/dist/ladda.min.js"></script>
+    <script src="assets/vendors/select2/dist/js/select2.full.min.js"></script>
+    <script src="assets/vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+    <script src="assets/vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+    <script src="assets/vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="assets/vendors/autosize/dist/autosize.min.js"></script>
+    <script src="assets/vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
+    <script src="assets/vendors/moment/min/moment.min.js"></script>
+    <script src="assets/vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="assets/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+    <script src="assets/vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
+    <script src="assets/vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+    <script src="assets/vendors/summernote/dist/summernote.min.js"></script>
+    <script src="assets/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/vendors/nestable/jquery.nestable.js"></script>
+    <script src="assets/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="assets/vendors/datatables/media/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+    <script src="assets/vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+    <script src="assets/vendors/editable-table/mindmup-editabletable.js"></script>
+    <script src="assets/vendors/d3/d3.min.js"></script>
+    <script src="assets/vendors/c3/c3.min.js"></script>
+    <script src="assets/vendors/chartist/dist/chartist.min.js"></script>
+    <script src="assets/vendors/peity/jquery.peity.min.js"></script>
+    <!-- v1.0.1 -->
+    <script src="assets/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+    <!-- v1.1.1 -->
+    <script src="assets/vendors/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="assets/vendors/hackertyper/hackertyper.js"></script>
+    <script src="assets/vendors/jquery-countTo/jquery.countTo.js"></script>
+    <!-- v1.4.0 -->
+    <script src="assets/vendors/nprogress/nprogress.js"></script>
+    <script src="assets/vendors/jquery-steps/build/jquery.steps.min.js"></script>
+    <!-- v1.4.2 -->
+    <script src="assets/vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/chart.js/src/Chart.bundle.min.js"></script>
+    <!-- v1.7.0 -->
+    <script src="assets/vendors/dropify/dist/js/dropify.min.js"></script>
+
+    <!-- Clean UI Scripts -->
+    <script src="assets/common/js/common.js"></script>
+    <script src="assets/common/js/demo.temp.js"></script>
+	
+	
+	
+	<script src="js/url.js"></script>
+    <script src="js/stock_catlog.js"></script>
+	
+	<!----- start ---- AMI-DEV003 Scripts -->
+	
+	<style>
+	/*****************ID CARD PRINT********************/
+	#member_card_heading{
+			padding-top:10px;
+		}
+		#member_card_name{
+			padding-left:10px;
+			    margin-top: -7px;
+		}
+		#member_card_designation{
+			padding-left:10px;
+		}
+		#member_card_details{
+			padding-left:10px;
+		}
+		  @media screen {
+		  #printSection {
+			  display: none;
+		  }
+		}
+
+		@media print {
+		  body * {
+			visibility:hidden;
+		  }
+		  *{
+			/*background: none !important;*/
+			-webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+			color-adjust: exact !important;  
+		  }
+		  #printSection, #printSection * {
+			visibility:visible;
+		  }
+		  #printSection {
+			position:absolute;
+			/*padding: 1% !important;*/
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+		  }
+		  html, body {
+              height:100vh; 
+              margin: 0 !important; 
+              padding: 0 !important;
+              overflow: hidden;
+            }
+			#member_card_outer_div{
+			position: relative;
+			left:0 !important;
+			top:0 !important;
+			bottom:0 !important;
+			right:0 !important;
+			/*padding: 10px 10px 0px 10px;*/
+			/*width: 5.58cm !important;*/
+			/**width: 5.25cm !important;****/
+			width: 5.4cm !important;
+			/*width: 5.32cm !important;*/
+			/*height: 8.89cm !important;*/
+			/*height: 8.4cm !important;*/
+			height: 8.55cm !important;
+			margin:3px !important;
+		background-image: url(https://admin.wbsdea.org/slimapp/sdea_application/frontend/image/4.jpg);
+			background-size: cover;
+			}
+			#member_card_outer_div2{
+			position: relative;
+			/*left:120% !important;
+			padding: 1%;
+			width: 5.4cm !important;
+			height: 8.6cm !important;*/
+			position: relative;
+			left:0 !important;
+			top:0 !important;
+			bottom:0 !important;
+			right:0 !important;
+			/*padding: 10px 10px 0px 10px;*/
+			/**width: 5.58cm !important;
+			height: 8.89cm !important;**/
+			width: 5.4cm !important;
+			height: 8.55cm !important;
+			margin:0px !important;
+			
+		background-image: url(https://admin.wbsdea.org/slimapp/sdea_application/frontend/image/2.png);
+			}
+			#member_card_outer_div2 .col-md-3{
+				width:25%;
+				float:left;
+			}
+			#member_card_outer_div2 .col-md-6{
+				width:50%;
+				float:left;
+			}
+			#member_card_outer_div2 .col-md-9{
+				width:75%;
+				float:left;
+			}
+			#member_card_outer_div2 .col-md-5{
+				width:41.66%;
+				float:left;
+			}
+			#member_card_outer_div2 .col-md-7{
+				width:58.33%;
+				float:left;
+			}
+			#member_card_officedetails{
+				position: relative;
+				top: 45px !important;
+			}
+			#member_card_siagnature{
+				position: relative;
+				top: 70px;
+				padding-top:10px;
+			}
+			#member_card_disclaimer{
+				position: relative;
+				top: 75px;
+				padding-top:10px;
+			}
+			#barcode_id{
+				top: 80px !important;
+				position: relative !important;
+			}
+			#member_img{
+				top: -103px !important;
+				position: relative;
+				left: -15px !important;
+			}
+			#barcode{
+				position:relative;
+				top: 77px !important;
+				left: 53px !important;
+				width: 50.2% !important;
+			}
+			#barcodeTarget{
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+				bottom: 20px !important;
+				font-weight: 600;
+				width:154px !important;
+				padding-top:10px !important;
+			  } 
+			  
+			  #mem_website{
+				position: relative !important;
+				left: -40px !important; 
+			  }
+			  
+		}
+	/*****************ID CARD PRINT********************/
+	
+	
+	.upper{
+		color: black !important;
+		font-size: 15px;
+		text-transform: uppercase !important;
+	}
+	
+	.lower{
+		color: black !important;
+		font-size: 15px;
+		text-transform: lowercase !important;
+	}
+	
+	.level-control{
+		text-transform: uppercase !important;
+	}
+	
+	.select2{
+		text-transform: uppercase !important;
+	}
+	
+	.se-pre-con {
+		display:none;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background: url(image/Preloader_3.gif) center no-repeat rgba(255, 255, 255, 0.65);
+	}
+	/**********BARCODE***********/
+	/* * {
+          color:#7F7F7F;
+          font-family:Arial,sans-serif;
+          font-size:12px;
+          font-weight:normal;
+      }*/    
+      #config{
+          overflow: auto;
+          margin-bottom: 10px;
+      }
+      .config{
+          float: left;
+          width: 200px;
+          height: 250px;
+          border: 1px solid #000;
+          margin-left: 10px;
+      }
+      .config .title{
+          font-weight: bold;
+          text-align: center;
+      }
+      .config .barcode2D,
+      #miscCanvas{
+        display: none;
+      }
+      #submit{
+          clear: both;
+      }
+      #barcodeTarget{
+		margin-left: auto;
+		margin-right: auto;
+        position: relative;
+		bottom: 20px;
+		font-weight: 600;
+		padding-top:15px;
+		
+      }  
+	  
+	  .view-form-control {
+		font-family: "Lato", sans;
+		padding: 1px 16px;
+		border-color: #ffffff;
+	}
+	.amicontrol{
+		width:88%;
+		float:left;
+	}
+	.amispan{
+		padding-left: 10px;
+		position: relative;
+		top: 5px;
+	}
+	  /*******************************/
+	</style>
+	
+</head>
+<body class="theme-defult">
+<div class="se-pre-con"></div>
+
+<nav class="left-menu" left-menu id="leftmenu">
+    
+</nav>
+<nav class="top-menu" id="topmenu">
+    
+</nav>
+<section class="page-content">
+<div class="page-content-inner">
+	<img src="image/add_icon.png" alt="add_icon" style="width:75px;position: fixed;cursor: pointer;bottom: 6%;z-index: 9999;right: 15px;" data-tooltip="Show Id Card" title="Show Id Card" onclick="openModal();">
+	<section class="panel">
+		<div class="panel-heading" style="border-bottom: 1px solid #a9a6a6;">
+            <h4>
+                Stock Catalog List
+            </h4>
+        </div>
+		
+		<!-- Show group role -->
+		<div class="row">
+		   <div class="col-lg-12">
+			   <div class="panel panel-default">
+				   
+				   <div class="col-sm-12">
+						<div class="col-sm-2" style="padding-top:2%;padding-bottom:2%;font-size: 17px;width: 18%;">
+						   <h6>Select Wallpaper Type</h6>
+						</div>
+						<div class="col-sm-2" style="padding-top:1%;padding-bottom:2%;width: 21%;padding-left: 0;  padding-right: 0;">
+							<select class="form-control" id="wallpaper_type" onchange="getcatloglist(this.value)" >
+								<option value="">Select Wallpaper Type</option>
+								<option value="1">Platinum</option>
+								<option value="2">Economical</option>
+							</select>
+							
+						</div>
+						<div class="col-sm-2" style="padding-top:2%;padding-bottom:2%;font-size: 17px;">
+						   <h6>Select Catalog Master</h6>
+						</div>
+						<div class="col-sm-2" style="padding-top:1%;padding-bottom:2%;width: 21%;padding-left: 0; padding-right: 0;">
+							<select class="form-control" id="catlog_master" onchange="citylist();">
+								<option value="">Select Catalog Master</option>
+							</select>
+							
+						</div>
+						<div class="col-sm-2" style="padding-top:2%;padding-bottom:2%;font-size: 17px;width: 10%;">
+						   <h6>Select City</h6>
+						</div>
+						<div class="col-sm-2" style="padding-top:1%;padding-bottom:2%;width: 13%;padding-left: 5px;padding-right: 5px;">
+							<select class="form-control" id="city_list" onchange="catlogdetailslist();">
+								<option value="">Select City</option>
+							</select>
+							
+						</div>
+					</div>
+					<!--<div class="col-sm-12" style="border-bottom: 1px solid #a9a6a6;margin-bottom: 2%;font-size: 17px;">
+						<div class="col-sm-3" style="padding-bottom:2%;margin-right: -82px;margin-top: 10px;">
+						   <h6>Select District</h6>
+						</div>
+						<div class="col-sm-3" style="padding-bottom:2%;">
+							<select class="form-control" id="district_list">
+								<option value="">Select District</option>
+							</select>
+							
+						</div>
+						<div class="col-sm-3" style="padding-bottom:2%;">
+							
+							<button type="button" class="btn btn-primary" onclick="showUserList();">Submit</button>
+							
+						</div>
+						
+					</div>-->
+				   <div class="panel-body" style="margin-bottom: 5%;">
+					   <div class="table-responsive" style="">
+						   <table class="table table-striped table-bordered table-hover" id="table_user">
+							   <thead>
+									<tr>
+										<th>Pattern No.</th>
+										<th>Pattern</th>
+										<th>Roll Size</th>
+										<th>Quantity</th>
+										<th>Image</th>
+										<th>City</th>
+										<th>Stock Status</th>
+										<th>Status</th>
+										<th>Access</th>
+										<th>Action</th>
+										
+									</tr>
+							   </thead>
+								<tbody>  
+                                    
+									
+								</tbody>
+								<tfoot>
+								   <tr>
+									    <th>Pattern No.</th>
+										<th>Pattern</th>
+										<th>Roll Size</th>
+										<th>Quantity</th>
+										<th>Image</th>
+										<th>City</th>
+										<th>Stock Status</th>
+										<th>Status</th>
+										<th>Access</th>
+										<th>Action</th>
+								   </tr>
+							   </tfoot>
+						   </table>
+					   </div>
+					   <!-- /.table-responsive -->
+					   
+				   </div>
+				   <!-- /.panel-body -->
+			   </div>
+			   <!-- /.panel -->
+		   </div>
+		</div>
+		<!-- End -- Show group role -->
+		
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add Stock Catalog</h4>
+        </div>
+        <div class="modal-body" style="height: 500px; overflow-y: scroll;">
+          <div class="form-group" style="width: 100%;height: auto;overflow-y: hidden;overflow-x: hidden;">
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Select Wallpaper Type <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="add_wallpepr_type" onchange="add_catlog_masterlist(this.value);">
+										<option value="">Select Wallpaper Type </option>
+										<option value="1">Platinum</option>
+										<option value="2">Economical</option>
+										
+									</select>
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Select Catalog Master<span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="add_catlog_master">
+										<option value="">Select Catalog Master</option>
+										
+									</select>
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								City <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="add_city">
+									<option value="">Select City</option>
+										
+								</select>
+							</div>
+						</div>						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Pattern no. <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_first_name">
+								<input class="form-control" placeholder="Enter Pattern No." id="add_pattern_no" />
+							</div>
+						</div>
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Pattern <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_last_name">
+								<input class="form-control" placeholder="Enter Pattern" id="add_pattern" />
+							</div>
+						</div>
+						<!--<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Select Media <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="add_media" onchange="getpaperlist(this.value);">
+										<option value="">Select Media</option>
+										
+									</select>
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Select Paper Type <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="add_paper_type" >
+										<option value="">Select Paper Type</option>
+										
+									</select>
+							</div>
+						</div>-->
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Roll Size <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_email">
+								<input class="form-control amicontrol" placeholder="Enter Roll Size" id="add_roll" /> <span class="amispan" style="color:#000;">ft.</span>
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Total Size <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_email">
+								<input class="form-control amicontrol" placeholder="Enter Total Size" id="add_total_roll" /> <span class="amispan" style="color:#000;">sq.ft.</span>
+							</div>
+						</div>
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Color  <span class="amispan" style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_perm_addr">
+								<input class="form-control" placeholder="Enter Color" id="add_color" />
+							</div>
+						</div>
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Quantity <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<input class="form-control amicontrol" placeholder="Enter Quantity" id="add_quantity" /> <span class="amispan" style="color:#000;">Rolls</span>
+							</div>
+						</div>
+						
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Country of Origin <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<input class="form-control" placeholder="Enter Country of Origin" id="add_country" />
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Stock Status <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="add_stock">
+									<option value="">Select Stock Status</option>
+									<option value="Continued">Continued</option>
+									<option value="Discontinued">Discontinued</option>
+										
+								</select>
+							</div>
+						</div>		
+												
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Thumbnail Image  <span class="amispan" style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_pro_pic">
+								<div style="width: 33%; float: left;">
+									<img id="thumb_pic" style="width:90px; height:90px;" src="image/img.png" alt="Image Not Available">
+								</div>
+								<div style="width: 33%; float: left;    padding-top: 15px;">
+									
+									<input type="file" onchange="upload_thumb();" id="add_thumb_pic" accept="image/*" style="width: 155%;">
+								</div>
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Mock Image  <span class="amispan" style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_pro_pic">
+								<div style="width: 33%; float: left;">
+									<img id="mock_pic" style="width:90px; height:90px;" src="image/img.png" alt="Image Not Available">
+								</div>
+								<div style="width: 33%; float: left;    padding-top: 15px;">
+									
+									<input type="file" onchange="upload_mock();" id="add_mock_pic" accept="image/*" style="width: 155%;">
+								</div>
+							</div>
+						</div>
+					</div>
+        </div>
+        <div class="modal-footer">
+		<button type="button" class="btn btn-info" onclick="addStockCatlogDetails();">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- view details -->
+   <div class="modal fade" id="viewdetails" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Catalog Details</h4>
+        </div>
+        <div class="modal-body" style="height: 500px; overflow-y: scroll;">
+          <div class="form-group" style="width: 100%;height: auto;overflow-y: hidden;overflow-x: hidden;">
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Catalog Master
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<label class="view-form-control" id="view_catlog_master"></label>
+							</div>
+						</div>
+												
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Pattern no. 
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_first_name">
+								<label class="view-form-control" id="view_pattern_no"></label>
+							</div>
+						</div>
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Pattern 
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_last_name">
+								<label class="view-form-control" id="view_pattern"></label>
+							</div>
+						</div>
+						<!--<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Media 
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<label class="view-form-control" id="view_media_paper"></label>
+							</div>
+						</div>-->
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Roll Size 
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_email">
+								<label class="view-form-control" id="view_roll"></label> 
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Total Size 
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_email">
+								<label class="view-form-control" id="view_total_size"></label> 
+							</div>
+						</div>
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Color
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_perm_addr">
+								<label class="view-form-control" id="view_color"></label>
+							</div>
+						</div>
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Quantity 
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<label class="view-form-control" id="view_quantity"></label>
+							</div>
+						</div>
+						
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Country of Origin 
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<label class="view-form-control" id="view_country"></label>
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Stock Status 
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<label class="view-form-control" id="view_stock"></label>
+							</div>
+						</div>		
+												
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Thumbnail Image
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_pro_pic">
+								<div style="width: 33%; float: left;" id="view_thumbs_pic">
+									<img id="view_thumb_pic" style="width:90px; height:90px;" src="image/pro_pic.jpg" alt="Image Not Available">
+								</div>
+								
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Mock Image
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_pro_pic">
+								<div style="width: 33%; float: left;" id="view_mocks_pic">
+									<img id="view_mock_pic" style="width:90px; height:90px;" src="image/file_demo.png" alt="Image Not Available">
+								</div>
+								
+							</div>
+						</div>
+					</div>
+        </div>
+        <div class="modal-footer">
+		
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ <!-- Edit user details -->
+
+<div class="modal fade" id="edituserModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Edit Catalog Details</h4>
+        </div>
+        <div class="modal-body" style="height: 500px; overflow-y: scroll;">
+          <div class="form-group" style="width: 100%;height: auto;overflow-y: hidden;overflow-x: hidden;">
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Select Wallpaper Type <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="edit_wallpepr_type" onchange="geteditcatlogmasterlist(this.value)">
+										
+										
+									</select>
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Select Catalog Master<span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="edit_catlog_master">
+										<option value="">Select Catlog Master</option>
+										
+									</select>
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								City <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="edit_city">
+									<option value="">Select City</option>
+										
+								</select>
+							</div>
+						</div>						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Pattern no. <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_first_name">
+								<input class="form-control" placeholder="Enter Pattern No." id="edit_pattern_no" />
+							</div>
+						</div>
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Pattern <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_last_name">
+								<input class="form-control" placeholder="Enter Pattern" id="edit_pattern" />
+							</div>
+						</div>
+						<!--<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Select Media <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="edit_media" onchange="geteditpaperlist(this.value)">
+										<option value="">Select Media</option>
+										
+									</select>
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Select Paper Type <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="edit_paper_type" >
+										<option value="">Select Paper Type</option>
+										
+									</select>
+							</div>
+						</div>-->
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Roll Size <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_email">
+								<input class="form-control" placeholder="Enter Roll Size" id="edit_roll" /> 
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Total Size <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_email">
+								<input class="form-control" placeholder="Enter Total Size" id="edit_total_roll" />
+							</div>
+						</div>
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Color  <span class="amispan" style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_perm_addr">
+								<input class="form-control" placeholder="Enter Color" id="edit_color" />
+							</div>
+						</div>
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Quantity <span class="amispan" style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<input class="form-control" placeholder="Enter Quantity" id="edit_quantity" />
+							</div>
+						</div>
+						
+						
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Country of Origin <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<input class="form-control" placeholder="Enter Country of Origin" id="edit_country" />
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Stock Status <span style="color:#f00;">*</span>
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_prst_addr">
+								<select class="form-control select2" id="edit_stock">
+									
+										
+								</select>
+							</div>
+						</div>		
+												
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Thumbnail Image
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_pro_pic">
+								<div style="width: 33%; float: left;">
+									<img id="editthumb_pic" style="width:90px; height:90px;" src="image/img.png" alt="Image Not Available">
+								</div>
+								<div style="width: 33%; float: left;    padding-top: 15px;">
+									
+									<input type="file" onchange="edit_upload_thumb();" id="edit_thumb_pic" accept="image/*" style="width: 155%;">
+								</div>
+							</div>
+						</div>
+						<div class="form-group" style="width: 100%; float: left;margin-left:10px;">
+							<div style="width: 26%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								Mock Image
+							</div>
+							<div style="width: 2%; float: left; font-weight: bold; padding-top: 6px; font-size: 15px;">
+								:
+							</div>
+							<div style="width: 66%; float: left;margin-top: 6px;" id="member_pro_pic">
+								<div style="width: 33%; float: left;">
+									<img id="editmock_pic" style="width:90px; height:90px;" src="image/img.png" alt="Image Not Available">
+								</div>
+								<div style="width: 33%; float: left;    padding-top: 15px;">
+									
+									<input type="file" onchange="edit_upload_mock();" id="edit_mock_pic" accept="image/*" style="width: 155%;">
+								</div>
+							</div>
+						</div>
+					</div>
+        </div>
+        <div class="modal-footer" id="edit_footer">
+		
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+		
+	</section>
+</div>
+</section>
+
+<!--<div class="cwt__footer visible-footer">
+    
+</div>-->
+<div class="main-backdrop"><!-- --></div>
+
+<script> 
+	$(function(){
+	  $("#topmenu").load("topmenu.html"); 
+	  $("#leftmenu").load("leftmenu.html"); 
+	  
+		$("#reg_dob").datetimepicker({
+			format: 'DD-MM-YYYY'
+		});
+		
+		
+		
+		$('.select2').select2();
+		
+	});
+	/*document.getElementById("btnPrint").onclick = function () {
+    printElement(document.getElementById("printThis"));
+    
+	}*/
+	
+
+</script>
+
+</body>
+</html>
